@@ -1,0 +1,35 @@
+{
+  "name": "typescript-theme-ui-link",
+  "version": "1.0.0",
+  "description": "A demo repo to show how to use Theme UI Link as GatsbyLink with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/typescript-theme-ui-link.git"
+  },
+  "author": "Paul Scanlon",
+  "keywords": [
+    "gatsby",
+    "theme-ui"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/typescript-theme-ui-link/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/typescript-theme-ui-link#readme",
+  "dependencies": {
+    "@theme-ui/components": "^0.3.1",
+    "gatsby": "^2.20.28",
+    "gatsby-plugin-theme-ui": "^0.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.1"
+  }
+}
