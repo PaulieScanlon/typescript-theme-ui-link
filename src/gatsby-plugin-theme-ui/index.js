@@ -10,13 +10,23 @@ export default {
     heading: "system-ui, sans-serif",
     monospace: "Menlo, monospace",
   },
+  sizes: {
+    container: 1140,
+  },
+  space: {
+    sm: 4,
+    md: 8,
+    lg: 32,
+  },
   styles: {
     root: {
       fontFamily: "body",
-      lineHeight: "body",
     },
     a: {
-      color: "secondary",
+      color: "text",
+      "&[aria-current]": {
+        color: "secondary",
+      },
     },
   },
 };
