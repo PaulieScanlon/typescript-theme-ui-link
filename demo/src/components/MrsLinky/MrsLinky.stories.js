@@ -6,7 +6,7 @@ export default {
   parameters: {
     component: MrsLinky,
     componentSubtitle:
-      "MrsLinky is JavaScript component and is JSX pragma enabled Gatsby <Link /> and can still be styled by Theme UI sx",
+      "MrsLinky is JavaScript component and is a JSX pragma enabled Gatsby <Link /> and can still be styled by Theme UI sx",
   },
 };
 
