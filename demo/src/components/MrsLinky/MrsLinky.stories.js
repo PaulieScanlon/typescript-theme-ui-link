@@ -1,21 +1,21 @@
 import React from "react";
-import { MrLinky } from ".";
+import { MrsLinky } from ".";
 
 export default {
-  title: "MrLinky",
+  title: "MrsLinky",
   parameters: {
-    component: MrLinky,
+    component: MrsLinky,
     componentSubtitle:
-      "MrLinky is TypeScript component and is JSX pragma enabled Gatsby <Link /> and can still be styled by Theme UI sx",
+      "MrsLinky is JavaScript component and is JSX pragma enabled Gatsby <Link /> and can still be styled by Theme UI sx",
   },
 };
 
-export const usage = () => <MrLinky to="/">Click Me</MrLinky>;
+export const usage = () => <MrsLinky to="/">Click Me</MrsLinky>;
 
 export const sx = () => (
-  <MrLinky to="/" sx={{ color: "primary" }}>
+  <MrsLinky to="/" sx={{ color: "primary" }}>
     Some Link
-  </MrLinky>
+  </MrsLinky>
 );
 
 sx.story = {
@@ -27,9 +27,9 @@ sx.story = {
 };
 
 export const attributes = () => (
-  <MrLinky to="/" title="Mr Linky">
+  <MrsLinky to="/" title="Mr Linky">
     Some Link
-  </MrLinky>
+  </MrsLinky>
 );
 
 attributes.story = {
