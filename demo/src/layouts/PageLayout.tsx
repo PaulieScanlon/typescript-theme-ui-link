@@ -17,9 +17,7 @@ const PageLayout: FunctionComponent = ({ children }) => (
         }}
       >
         <MrLinky to="/">Link to index</MrLinky>
-        <MrLinky to="/page-2" sx={{ color: "primary" }}>
-          Link to page-2
-        </MrLinky>
+        <MrLinky to="/page-2">Link to page-2</MrLinky>
       </Box>
       <Box as="section" sx={{ px: "md", py: "lg" }}>
         {children}

@@ -4,6 +4,7 @@ export default {
     background: "#FFFFFF",
     primary: "#34D058",
     secondary: "#0366D6",
+    muted: "#CCCCCC",
   },
   fonts: {
     body: "system-ui, sans-serif",
@@ -24,6 +25,7 @@ export default {
     },
     a: {
       color: "text",
+      textDecoration: "none",
       "&[aria-current]": {
         color: "secondary",
       },

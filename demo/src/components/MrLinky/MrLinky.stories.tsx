@@ -6,7 +6,7 @@ export default {
   parameters: {
     component: MrLinky,
     componentSubtitle:
-      "The MrLinky component is a JSX Fragma enabled Gatsby <Link /> and can still be styled by Theme UI sx",
+      "MrLinky is TypeScript component and is JSX pragma enabled Gatsby <Link /> and can still be styled by Theme UI sx",
   },
 };
 
@@ -35,7 +35,8 @@ export const attributes = () => (
 attributes.story = {
   parameters: {
     docs: {
-      storyDescription: "Some `AnchorHTMLAttributes` can still be applied",
+      storyDescription:
+        "Legitimate `AnchorHTMLAttributes` can still be applied",
     },
   },
 };
