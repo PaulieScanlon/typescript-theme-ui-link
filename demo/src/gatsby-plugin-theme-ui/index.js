@@ -1,4 +1,7 @@
 export default {
+  borderWidths: {
+    sm: 1,
+  },
   colors: {
     text: "#24292E",
     background: "#FFFFFF",
@@ -22,6 +25,12 @@ export default {
   styles: {
     root: {
       fontFamily: "body",
+    },
+    h1: {
+      mb: "md",
+    },
+    p: {
+      mb: "lg",
     },
     a: {
       color: "text",

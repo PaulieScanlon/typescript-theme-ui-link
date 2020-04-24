@@ -27,7 +27,7 @@ sx.story = {
 };
 
 export const attributes = () => (
-  <MrsLinky to="/" title="Mr Linky">
+  <MrsLinky to="/" title="Mrs Linky">
     Some Link
   </MrsLinky>
 );

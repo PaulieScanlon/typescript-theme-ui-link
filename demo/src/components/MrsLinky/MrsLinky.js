@@ -5,15 +5,17 @@ import { Link } from "gatsby";
 
 import theme from "../../gatsby-plugin-theme-ui";
 
-export const MrsLinky = ({ children, sx, ...rest }) => (
-  <Link sx={{ ...theme.styles.a, ...sx }} {...rest}>
+export const MrsLinky = ({ children, to, sx, ...rest }) => (
+  <Link to={to} sx={{ ...theme.styles.a, ...sx }} {...rest}>
     {children}
   </Link>
 );
 
 MrsLinky.propTypes = {
+  /** Gatsby internal route */
+  to: PropTypes.string.isRequired,
   /** Theme UI JSX pragma */
   sx: PropTypes.any,
-  /** The remaining props inherited from GatsbyLinkProps or from AnchorHTMLAttributes */
+  /** Inherited props from AnchorHTMLAttributes and GatsbyLinkProps  */
   rest: PropTypes.any,
 };

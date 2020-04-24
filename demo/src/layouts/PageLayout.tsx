@@ -9,6 +9,9 @@ const PageLayout: FunctionComponent = ({ children }) => (
       <Box
         as="header"
         sx={{
+          borderBottomColor: "muted",
+          borderBottomStyle: "solid",
+          borderBottomWidth: "sm",
           px: "md",
           py: "lg",
           "a:nth-of-type(n)": {
