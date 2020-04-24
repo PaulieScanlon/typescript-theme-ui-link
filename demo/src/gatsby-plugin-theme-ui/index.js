@@ -39,5 +39,9 @@ export default {
         color: "secondary",
       },
     },
+    hr: {
+      color: "muted",
+      my: "lg",
+    },
   },
 };
