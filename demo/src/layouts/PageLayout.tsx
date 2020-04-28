@@ -3,7 +3,6 @@ import { Box, Container, Alert, Divider } from "theme-ui";
 import { Location } from "@reach/router";
 
 import { MrLinky } from "../components/MrLinky/MrLinky";
-import { MrQuery } from "../components/MrQuery";
 
 const PageLayout: FunctionComponent = ({ children }) => (
   <Box as="main">
@@ -26,14 +25,17 @@ const PageLayout: FunctionComponent = ({ children }) => (
                 },
               }}
             >
-              <MrLinky to="/">Link to index</MrLinky>
-              <MrLinky to="/page-2">Link to page-2</MrLinky>
+              <MrLinky to="/" sx={{ variant: "links.navigation" }}>
+                Link to index
+              </MrLinky>
+              <MrLinky to="/page-2" sx={{ variant: "links.navigation" }}>
+                Link to page-2
+              </MrLinky>
             </Box>
             <Box as="section" sx={{ px: "md", py: "lg" }}>
-              {state && state.message && <Alert>{state.message}</Alert>}
+              {state && state.message ? <Alert>{state.message}</Alert> : null}
               <Divider />
-              <MrQuery />
-              <Divider />
+
               {children}
             </Box>
           </Container>

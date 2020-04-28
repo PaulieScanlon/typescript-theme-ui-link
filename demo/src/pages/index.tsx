@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Heading, Text, Divider, Flex } from "theme-ui";
+
 import { MrLinky } from "../components/MrLinky";
+import { MrQuery } from "../components/MrQuery";
 
 const IndexPage = () => (
   <Box>
@@ -12,7 +14,7 @@ const IndexPage = () => (
       Link)
     </Text>
     <Text as="p" variant="styles.p">
-      When a link is{" "}
+      When a navigation link is{" "}
       <Text as="span" sx={{ color: "secondary" }}>
         blue
       </Text>{" "}
@@ -24,20 +26,22 @@ const IndexPage = () => (
     <Text as="p" variant="styles.p">
       Use state to set a state message in `@reach/router` location.state
     </Text>
-
     <Flex
       sx={{
         flexDirection: "column",
       }}
     >
       <MrLinky to="/" state={{ message: "Hello" }}>
-        Hello
+        Say Hello
       </MrLinky>
 
       <MrLinky to="/" state={{ message: "Bonjour" }}>
-        Bonjour
+        Say Bonjour
       </MrLinky>
     </Flex>
+
+    <Divider />
+    <MrQuery />
   </Box>
 );
 

@@ -13,7 +13,7 @@ export default {
 export const usage = () => <MrLinky to="/">Click Me</MrLinky>;
 
 export const sx = () => (
-  <MrLinky to="/" sx={{ color: "primary" }}>
+  <MrLinky to="/" sx={{ color: "secondary" }}>
     Some Link
   </MrLinky>
 );
@@ -37,6 +37,25 @@ attributes.story = {
     docs: {
       storyDescription:
         "Legitimate `AnchorHTMLAttributes` can still be applied",
+    },
+  },
+};
+
+export const variant = () => (
+  <MrLinky
+    to="/"
+    sx={{
+      variant: "links.navigation",
+    }}
+  >
+    Some Link
+  </MrLinky>
+);
+
+variant.story = {
+  parameters: {
+    docs: {
+      storyDescription: "Use `variant` type via the `sx`",
     },
   },
 };

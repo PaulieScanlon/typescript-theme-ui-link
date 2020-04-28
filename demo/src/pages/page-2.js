@@ -12,9 +12,7 @@ const PageTwo = () => (
       This page is JavaScript and below is MrsLink (The JavaScript version of a
       Gatsby Link)
     </Text>
-    <MrsLinky to="/" sx={{ color: "primary" }}>
-      Back
-    </MrsLinky>
+    <MrsLinky to="/">Back</MrsLinky>
   </Box>
 );
 

@@ -8,6 +8,10 @@ export default {
     primary: "#34D058",
     secondary: "#0366D6",
     muted: "#CCCCCC",
+    highlight: "#BBFFCD",
+    gray: "#808080",
+    accent: "#cee5ff",
+    darken: "#F7F7F7",
   },
   fonts: {
     body: "system-ui, sans-serif",
@@ -33,15 +37,27 @@ export default {
       mb: "lg",
     },
     a: {
-      color: "text",
-      textDecoration: "none",
-      "&[aria-current]": {
-        color: "secondary",
-      },
+      color: "primary",
     },
     hr: {
       color: "muted",
       my: "lg",
+    },
+  },
+  links: {
+    color: "primary",
+    navigation: {
+      color: "text",
+      borderRadius: 4,
+      textDecoration: "none",
+      p: "md",
+      transition: ".2s linear background-color",
+      ":hover": {
+        backgroundColor: "darken",
+      },
+      "&[aria-current]": {
+        color: "secondary",
+      },
     },
   },
 };
